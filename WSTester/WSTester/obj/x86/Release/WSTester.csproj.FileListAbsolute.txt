@@ -1,0 +1,18 @@
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Release\WSTester.exe.config
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Release\WSTester.exe
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Release\WSTester.pdb
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.frmMain.resources
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.Properties.Resources.resources
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.csproj.GenerateResource.Cache
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.exe
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.pdb
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.csprojResolveAssemblyReference.cache
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Release\WSTester.exe.config
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Release\WSTester.exe
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Release\WSTester.pdb
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.csprojResolveAssemblyReference.cache
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.frmMain.resources
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.Properties.Resources.resources
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.csproj.GenerateResource.Cache
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.exe
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Release\WSTester.pdb

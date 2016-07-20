@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://testorders.orderlinc.com:8084/mobileservices.asmx?wsdl" docRef="http://testorders.orderlinc.com:8084/mobileservices.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://testorders.orderlinc.com:8084/mobileservices.asmx" xmlns:q1="http://4solutions.co.au/" binding="q1:mobileservicesSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://testorders.orderlinc.com:8084/mobileservices.asmx" xmlns:q2="http://4solutions.co.au/" binding="q2:mobileservicesSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

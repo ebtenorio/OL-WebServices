@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\192.168.50.24\OrderLincWS" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="HSNDevServer" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/PLPersistenceServices.dll" publishTime="05/07/2014 20:13:41" />
+    <file relUrl="bin/OrderLincWS.dll" publishTime="05/14/2014 20:49:30" />
+    <file relUrl="Web.config" publishTime="05/12/2014 16:58:24" />
+    <file relUrl="mobileservices.asmx" publishTime="05/07/2014 17:45:29" />
+    <file relUrl="bin/OrderLincWS.pdb" publishTime="05/14/2014 20:49:30" />
+    <file relUrl="Global.asax" publishTime="05/07/2014 17:40:43" />
+    <file relUrl="bin/OrderLincLib.dll" publishTime="05/14/2014 15:58:13" />
+  </publishProfile>
+</publishData>

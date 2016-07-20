@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mDeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="tns:DTOMobileAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DTOMobileAccount">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AccountID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="RefID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrgUnitID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RoleID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AddressID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ContactID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Lockout" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastIpAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateLockout" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastLoginDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateUpdated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpiryDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateActivated" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AccountTypeText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServerUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Logo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RegisterDevice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mDeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterDeviceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterDeviceResult" type="tns:DTOMobileAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnRegisterDevice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnRegisterDeviceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UnRegisterDeviceResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DTOMobileAccount" nillable="true" type="tns:DTOMobileAccount" />
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterDeviceSoapIn">
+    <wsdl:part name="parameters" element="tns:RegisterDevice" />
+  </wsdl:message>
+  <wsdl:message name="RegisterDeviceSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterDeviceSoapIn">
+    <wsdl:part name="parameters" element="tns:UnRegisterDevice" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterDeviceSoapOut">
+    <wsdl:part name="parameters" element="tns:UnRegisterDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetIn">
+    <wsdl:part name="mUserName" type="s:string" />
+    <wsdl:part name="mPassword" type="s:string" />
+    <wsdl:part name="mDeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:DTOMobileAccount" />
+  </wsdl:message>
+  <wsdl:message name="RegisterDeviceHttpGetIn">
+    <wsdl:part name="mUserName" type="s:string" />
+    <wsdl:part name="mPassword" type="s:string" />
+    <wsdl:part name="mDeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegisterDeviceHttpGetOut">
+    <wsdl:part name="Body" element="tns:DTOMobileAccount" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterDeviceHttpGetIn">
+    <wsdl:part name="mUserName" type="s:string" />
+    <wsdl:part name="mPassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterDeviceHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostIn">
+    <wsdl:part name="mUserName" type="s:string" />
+    <wsdl:part name="mPassword" type="s:string" />
+    <wsdl:part name="mDeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostOut">
+    <wsdl:part name="Body" element="tns:DTOMobileAccount" />
+  </wsdl:message>
+  <wsdl:message name="RegisterDeviceHttpPostIn">
+    <wsdl:part name="mUserName" type="s:string" />
+    <wsdl:part name="mPassword" type="s:string" />
+    <wsdl:part name="mDeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegisterDeviceHttpPostOut">
+    <wsdl:part name="Body" element="tns:DTOMobileAccount" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterDeviceHttpPostIn">
+    <wsdl:part name="mUserName" type="s:string" />
+    <wsdl:part name="mPassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterDeviceHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <wsdl:input message="tns:RegisterDeviceSoapIn" />
+      <wsdl:output message="tns:RegisterDeviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnRegisterDevice">
+      <wsdl:input message="tns:UnRegisterDeviceSoapIn" />
+      <wsdl:output message="tns:UnRegisterDeviceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Service1HttpGet">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginHttpGetIn" />
+      <wsdl:output message="tns:LoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <wsdl:input message="tns:RegisterDeviceHttpGetIn" />
+      <wsdl:output message="tns:RegisterDeviceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnRegisterDevice">
+      <wsdl:input message="tns:UnRegisterDeviceHttpGetIn" />
+      <wsdl:output message="tns:UnRegisterDeviceHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Service1HttpPost">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginHttpPostIn" />
+      <wsdl:output message="tns:LoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <wsdl:input message="tns:RegisterDeviceHttpPostIn" />
+      <wsdl:output message="tns:RegisterDeviceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnRegisterDevice">
+      <wsdl:input message="tns:UnRegisterDeviceHttpPostIn" />
+      <wsdl:output message="tns:UnRegisterDeviceHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <soap:operation soapAction="http://tempuri.org/RegisterDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegisterDevice">
+      <soap:operation soapAction="http://tempuri.org/UnRegisterDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <soap12:operation soapAction="http://tempuri.org/RegisterDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegisterDevice">
+      <soap12:operation soapAction="http://tempuri.org/UnRegisterDevice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpGet" type="tns:Service1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <http:operation location="/RegisterDevice" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegisterDevice">
+      <http:operation location="/UnRegisterDevice" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1HttpPost" type="tns:Service1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <http:operation location="/RegisterDevice" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegisterDevice">
+      <http:operation location="/UnRegisterDevice" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://localhost:50412/OrderLincRegistry.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://localhost:50412/OrderLincRegistry.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpGet" binding="tns:Service1HttpGet">
+      <http:address location="http://localhost:50412/OrderLincRegistry.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1HttpPost" binding="tns:Service1HttpPost">
+      <http:address location="http://localhost:50412/OrderLincRegistry.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

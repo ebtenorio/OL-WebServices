@@ -1,0 +1,36 @@
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe.config
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.pdb
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.frmMain.resources
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.Properties.Resources.resources
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csproj.GenerateResource.Cache
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.exe
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.pdb
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csprojResolveAssemblyReference.cache
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe.config
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.exe
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.pdb
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.pdb
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csprojResolveAssemblyReference.cache
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.frmMain.resources
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.Properties.Resources.resources
+C:\OrderlincPortal-BitBucket\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csproj.GenerateResource.Cache
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe.config
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.exe
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.pdb
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.pdb
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csprojResolveAssemblyReference.cache
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.frmMain.resources
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.Properties.Resources.resources
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csproj.GenerateResource.Cache
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe.config
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.exe
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.pdb
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.exe
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\bin\Debug\WSTester.pdb
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csprojResolveAssemblyReference.cache
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.frmMain.resources
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.Properties.Resources.resources
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\WSTester\WSTester\obj\x86\Debug\WSTester.csproj.GenerateResource.Cache

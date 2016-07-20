@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://4solutions.co.au/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://4solutions.co.au/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://4solutions.co.au/">
+      <s:element name="IsOnline">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsOnlineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsOnlineResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmailNotification">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmailNotificationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmailNotificationResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VersionControl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VersionMajor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VersionMinor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VersionControlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VersionControlResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErroMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReferenceData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="salesOrgNo" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="repAccountNo" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReferenceDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReferenceDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="order" type="tns:DTOOrder" />
+            <s:element minOccurs="0" maxOccurs="1" name="imageArray" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="contact" type="tns:DTOContact" />
+            <s:element minOccurs="0" maxOccurs="1" name="uName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uPW" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DTOOrder">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrderID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesOrgID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SalesRepAccountID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProviderID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProviderWarehouseID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeliveryDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="InvoiceDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SYSOrderStatusID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReceivedDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReleaseDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSent" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsHeld" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateCreated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateUpdated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedByUserID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="UpdatedByUserID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="HoldUntilDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsMobile" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderGUID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProviderCustomerCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderLine" type="tns:ArrayOfDTOOrderLine" />
+          <s:element minOccurs="0" maxOccurs="1" name="SYSOrderStatusText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProviderName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedByName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDTOOrderLine">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DTOOrderLine" nillable="true" type="tns:DTOOrderLine" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DTOOrderLine">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrderLineID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="LineNum" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderQty" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="DespatchQty" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="UOM" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderPrice" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="DespatchPrice" type="s:float" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrimarySKU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GTINCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DTOContact">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ContactID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedByUserID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OldID" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SubmitOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubmitOrderResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateError">
+        <s:complexType />
+      </s:element>
+      <s:element name="CreateErrorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateErrorResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="IsOnlineSoapIn">
+    <wsdl:part name="parameters" element="tns:IsOnline" />
+  </wsdl:message>
+  <wsdl:message name="IsOnlineSoapOut">
+    <wsdl:part name="parameters" element="tns:IsOnlineResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmailNotificationSoapIn">
+    <wsdl:part name="parameters" element="tns:EmailNotification" />
+  </wsdl:message>
+  <wsdl:message name="EmailNotificationSoapOut">
+    <wsdl:part name="parameters" element="tns:EmailNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="VersionControlSoapIn">
+    <wsdl:part name="parameters" element="tns:VersionControl" />
+  </wsdl:message>
+  <wsdl:message name="VersionControlSoapOut">
+    <wsdl:part name="parameters" element="tns:VersionControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReferenceDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReferenceData" />
+  </wsdl:message>
+  <wsdl:message name="GetReferenceDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReferenceDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitOrder" />
+  </wsdl:message>
+  <wsdl:message name="SubmitOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateErrorSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateError" />
+  </wsdl:message>
+  <wsdl:message name="CreateErrorSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateErrorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="mobileservicesSoap">
+    <wsdl:operation name="IsOnline">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns true, webservice is active.</wsdl:documentation>
+      <wsdl:input message="tns:IsOnlineSoapIn" />
+      <wsdl:output message="tns:IsOnlineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmailNotification">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Test email notification.</wsdl:documentation>
+      <wsdl:input message="tns:EmailNotificationSoapIn" />
+      <wsdl:output message="tns:EmailNotificationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VersionControl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check Application Version</wsdl:documentation>
+      <wsdl:input message="tns:VersionControlSoapIn" />
+      <wsdl:output message="tns:VersionControlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReferenceData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">gets reference data for a sales Organization</wsdl:documentation>
+      <wsdl:input message="tns:GetReferenceDataSoapIn" />
+      <wsdl:output message="tns:GetReferenceDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitOrder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Accepts mobile orders and the signature image array associated with it.</wsdl:documentation>
+      <wsdl:input message="tns:SubmitOrderSoapIn" />
+      <wsdl:output message="tns:SubmitOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateError">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creates error</wsdl:documentation>
+      <wsdl:input message="tns:CreateErrorSoapIn" />
+      <wsdl:output message="tns:CreateErrorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="mobileservicesSoap" type="tns:mobileservicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsOnline">
+      <soap:operation soapAction="http://4solutions.co.au/IsOnline" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailNotification">
+      <soap:operation soapAction="http://4solutions.co.au/EmailNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VersionControl">
+      <soap:operation soapAction="http://4solutions.co.au/VersionControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReferenceData">
+      <soap:operation soapAction="http://4solutions.co.au/GetReferenceData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitOrder">
+      <soap:operation soapAction="http://4solutions.co.au/SubmitOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateError">
+      <soap:operation soapAction="http://4solutions.co.au/CreateError" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="mobileservicesSoap12" type="tns:mobileservicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IsOnline">
+      <soap12:operation soapAction="http://4solutions.co.au/IsOnline" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmailNotification">
+      <soap12:operation soapAction="http://4solutions.co.au/EmailNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VersionControl">
+      <soap12:operation soapAction="http://4solutions.co.au/VersionControl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReferenceData">
+      <soap12:operation soapAction="http://4solutions.co.au/GetReferenceData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitOrder">
+      <soap12:operation soapAction="http://4solutions.co.au/SubmitOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateError">
+      <soap12:operation soapAction="http://4solutions.co.au/CreateError" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="mobileservices">
+    <wsdl:port name="mobileservicesSoap" binding="tns:mobileservicesSoap">
+      <soap:address location="http://testorders.orderlinc.com:8084/mobileservices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="mobileservicesSoap12" binding="tns:mobileservicesSoap12">
+      <soap12:address location="http://testorders.orderlinc.com:8084/mobileservices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

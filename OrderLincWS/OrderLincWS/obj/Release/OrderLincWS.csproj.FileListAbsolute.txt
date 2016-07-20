@@ -1,0 +1,39 @@
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.dll
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.pdb
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\bin\EmailSVC.dll
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincLib.dll
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\bin\PLPersistenceServices.dll
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.dll
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.pdb
+C:\OrderlincPortal-BitBucket\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.csprojResolveAssemblyReference.cache
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.dll
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.pdb
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\EmailSVC.dll
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincLib.dll
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\PLPersistenceServices.dll
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.dll
+D:\1440-4SE-OrderLincVersion3 (3)\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.pdb
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.pdb
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\EmailSVC.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincLib.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\PLPersistenceServices.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.csprojResolveAssemblyReference.cache
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.pdb
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.dll
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.pdb
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\EmailSVC.dll
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincLib.dll
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\PLPersistenceServices.dll
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.dll
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.pdb
+C:\Agilitinet\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.csprojResolveAssemblyReference.cache
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.dll
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.pdb
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\EmailSVC.dll
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincLib.dll
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\PLPersistenceServices.dll
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.dll
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.pdb
+C:\AgilitiNet Source\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Release\OrderLincWS.csprojResolveAssemblyReference.cache

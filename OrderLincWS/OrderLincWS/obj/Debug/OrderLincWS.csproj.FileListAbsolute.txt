@@ -1,0 +1,7 @@
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincWS.pdb
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\OrderLincLib.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\bin\PLPersistenceServices.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Debug\OrderLincWS.csprojResolveAssemblyReference.cache
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Debug\OrderLincWS.dll
+C:\PTINET\1440-4SE-OrderLincVersion3\Application\OrderLincWebService\OrderLincWS\OrderLincWS\obj\Debug\OrderLincWS.pdb

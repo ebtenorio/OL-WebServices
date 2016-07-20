@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\192.168.50.20\OrderLincRegistryWebServiceSetup</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EmailSVC.dll">
+      <publishTime>10/10/2013 09:09:26</publishTime>
+    </File>
+    <File Include="bin/OrderAppLib.dll">
+      <publishTime>01/06/2014 14:43:05</publishTime>
+    </File>
+    <File Include="bin/OrderAppLib.pdb">
+      <publishTime>01/06/2014 14:43:05</publishTime>
+    </File>
+    <File Include="bin/OrderLincRegistryWebservice.dll">
+      <publishTime>01/07/2014 10:58:52</publishTime>
+    </File>
+    <File Include="bin/OrderLincRegistryWebservice.pdb">
+      <publishTime>01/07/2014 10:58:51</publishTime>
+    </File>
+    <File Include="bin/PDFTechLib.dll">
+      <publishTime>07/22/2013 09:00:19</publishTime>
+    </File>
+    <File Include="bin/PLPersistenceServices.dll">
+      <publishTime>07/22/2013 09:00:19</publishTime>
+    </File>
+    <File Include="bin/PLPersistenceServices.pdb">
+      <publishTime>07/22/2013 09:00:19</publishTime>
+    </File>
+    <File Include="OrderLincRegistry.asmx">
+      <publishTime>11/21/2013 11:10:38</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/07/2014 11:03:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
