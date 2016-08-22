@@ -64,23 +64,26 @@ namespace OrderLincRegistryWebservice
                 {
                     mAccount = GlobalVariable.OrderAppLib.AccountService.AccountAuthenticate(mUserName, mPassword, mDeviceNo);
 
-                    if (mAccount != null && mAccount.AccountID != 0) // Added 17-9-2014 Ringo Ray Piedraverde - Reintegration
+                    if (mAccount != null && mAccount.AccountID != 0)
                     {
                         DTOAccount mDTO = GlobalVariable.OrderAppLib.AccountService.AccountListByID(mAccount.AccountID);
 
                         mDTO.LastLoginDate = DateTime.Now;
-                        
+
                         GlobalVariable.OrderAppLib.AccountService.AccountSaveRecord(mDTO);
 
-                    }
-                   
-                }
+                        GlobalVariable.OrderAppLib.LogService.LogSave("Login Web Service", "Device No " + mDTO.DeviceNo + " has been successfully logged on.", mDTO.AccountID);
 
+                    }
+
+                }
+                
                 return mAccount;
             }
             catch (Exception ex)
             {
                 DTOMobileAccount mAccountEx = new DTOMobileAccount();
+                GlobalVariable.OrderAppLib.LogService.LogSave("Login Web Service", ex.Message, 0);
                 return mAccountEx;
             }
         }
